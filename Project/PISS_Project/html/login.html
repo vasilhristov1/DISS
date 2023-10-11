@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="../js/sendRequestUtility.js"></script>
+        <script defer src="../js/login.js"></script>
+        <link rel="stylesheet" href="../css/login.css" />
+    </head>
+    <body>
+        <main id="register-form">
+            <form class="signin-form">
+                <label class="error userDoesNotExistError"></label>
+                <p class="signin-form-header">Login</p>
+                <input id="username" type="text" placeholder="Потребителско име" class="first-name-input" />
+                <input id="password" type="password" placeholder="Парола" class="password-input" />
+                <button id="login" type="submit" title="SIGN IN" value="SIGN IN" class="submit-button">Sign In</button>
+                <p>Not registered yet ? Register here: <a href="register.html">register</a></p>
+            </form>
+        </main>
+    </body>
+</html>

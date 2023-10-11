@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+    background-image: url(../images/backgroundRegisterLogin.jpg);
+    background-size: cover;
+	padding: 0;
+	margin: 0;
+}
+
+.signup-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	z-index: 0;
+	display: flex;
+    flex-direction: column;
+	min-width: 30%;
+	max-width: 35rem;
+	padding: 1rem;
+	background-color: #81828b5c;
+	backdrop-filter: brightness(0.5);
+	gap: 20px;
+	border-radius: 10px;   
+	color: #f6f6f6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+}
+
+.signup-form-header {
+	font-size: 50px; 
+	margin: 0; 
+}
+
+.signup-form-textarea {
+	background-color:transparent;
+}
+
+.signup-form input {
+	border: 0;
+	background-color: transparent;
+	border-bottom: 2px solid #00fae1;
+	height: 2rem;
+}
+
+.signup-form input::placeholder{
+	color: white;
+}
+
+.signup-form input:focus {
+	outline: none;
+	border-bottom: 2px solid #5badc7;
+}
+
+.signup-form textarea {
+	background-color: transparent;
+	border: 1px solid #ff7f50;
+}
+
+.signup-form textarea:focus {
+	outline: 2px solid #ff7f50;
+}
+
+.signup-form input, select, textarea {
+    color: white;
+	font-size: 14px;
+}
+
+.signup-form input:invalid {
+	outline: none;
+	border-bottom: 2px solid #5badc7;
+}
+
+.submit-button {
+	position:relative;
+	width: 10rem;
+	height: 3rem;
+	min-height: 45px;
+	border-radius: 20px;
+	border: 1;
+	cursor: pointer;
+    color: white;
+	background: rgb(255 255 255);
+    background: linear-gradient(90deg, rgb(36 101 26) 6%, rgb(7 255 200) 100%);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.submit-button:focus{
+	outline: none;
+}
+
+.submit-button:active {
+	top: 2px;
+	left: 2px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 900px) {
+	.signup-form {
+		max-height: 90%;
+		min-width: 50%;
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width : 500px) {
+	.signup-form {
+		max-height: 90%;
+		min-width: 60%;
+		padding: 35px;
+		gap: 10px;
+		justify-content: space-evenly;
+	}
+
+	.submit-button {
+		min-height: 45px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.signup-form {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		padding: 15px;
+		gap: 10px;
+		justify-content: space-evenly;
+	}
+
+	.submit-button {
+		min-height: 45px;
+	}
+}
